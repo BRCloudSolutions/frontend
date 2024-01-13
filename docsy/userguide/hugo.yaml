@@ -64,8 +64,8 @@ markup:
     style: tango
 
 params:
-  copyright: The Docsy Authors
-  privacy_policy: https://policies.google.com/privacy
+  copyright: BR Cloud Solutions
+  privacy_policy:
   version_menu: Releases
   archived_version: false
   version: 0.8.0

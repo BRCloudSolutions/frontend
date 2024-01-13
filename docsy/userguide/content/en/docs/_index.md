@@ -1,8 +1,8 @@
 
 ---
 title: Welcome to Docsy
-linkTitle: Documentation
-menu: {main: {weight: 20}}
+linkTitle: Contact Us
+menu: {main: {weight: 30}}
 ---
 
 Welcome to the Docsy theme user guide! This guide shows you how to get started creating technical documentation sites using Docsy, including site customization and how to use Docsy's blocks and templates.
