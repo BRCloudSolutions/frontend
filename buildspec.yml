@@ -2,12 +2,18 @@ version: 0.2
 phases:
   install:
     commands:
+      - mkdir -p /tmp/codebuild/bin
       - wget https://github.com/gohugoio/hugo/releases/download/v0.121.2/hugo_0.121.2_linux-arm64.tar.gz -q -o /dev/null
       - tar -xf hugo_0.121.2_linux-arm64.tar.gz
-      - mkdir -p /tmp/codebuild/bin
-      - mv hugo /tmp/codebuild/bin/hugo
+      - ln -s hugo /tmp/codebuild/bin/hugo
+      - wget https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-arm64.tar.xz -q -o /dev/null
+      - tar -xf node-v20.11.0-linux-arm64.tar.xz
+      - ln -s node /tmp/codebuild/bin/node
+      - ln -s npm /tmp/codebuild/bin/npm
+      - ln -s npx /tmp/codebuild/bin/npx
       - npm install postcss -g
       - cd docsy && npm install
   build:
     commands:
+      - cd docsy
       - hugo
