@@ -6,6 +6,8 @@ phases:
       - tar -xf hugo_0.121.2_linux-arm64.tar.gz
       - mkdir -p /tmp/codebuild/bin
       - mv hugo /tmp/codebuild/bin/hugo
+      - npm install postcss -g
+      - cd docsy && npm install
   build:
     commands:
       - hugo
