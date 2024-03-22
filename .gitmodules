@@ -1,0 +1,9 @@
+[submodule "default/themes/docsy"]
+	path = default/themes/docsy
+	url = https://github.com/google/docsy
+[submodule "default/themes/github.com/twbs/bootstrap"]
+	path = default/themes/github.com/twbs/bootstrap
+	url = https://github.com/twbs/bootstrap
+[submodule "default/themes/github.com/FortAwesome/Font-Awesome"]
+	path = default/themes/github.com/FortAwesome/Font-Awesome
+	url = https://github.com/FortAwesome/Font-Awesome
