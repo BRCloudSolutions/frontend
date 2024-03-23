@@ -1,4 +1,53 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://brcloudsolutions.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'BR Cloud Solutions'
 theme = 'docsy'
+enableRobotsTXT = true
+
+contentDir = "content/en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+
+[languages.en]
+contentDir = 'content/en'
+languageName = 'English'
+languageCode = 'en-US'
+[languages.en.params]
+title = '*title'
+description = '*desc'
+
+[languages.pt]
+contentDir = 'content/pt'
+languageName = 'Português'
+languageCode = 'pt-BR'
+[languages.pt.params]
+title = '*title'
+description = '*desc'
+
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "Smart"
+
+
+[params]
+[params.links]
+[[params.links.user]]
+name = "GitHub"
+url = "https://github.com/BRCloudSolutions"
+icon = "fa-brands fa-github"
+desc = "Discussion and help from your fellow users"
+
+[[params.links.user]]
+name = "Twitter"
+url = "https://twitter.com/BRCloudSolution"
+icon = "fa-brands fa-x-twitter"
+desc = "Follow us on Twitter to get the latest news!"
+
+[[params.links.user]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/company/br-cloud-solutions"
+icon = "fa-brands fa-linkedin"
+desc = "Follow us on LinkedIn"
