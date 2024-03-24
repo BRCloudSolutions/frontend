@@ -1,11 +1,11 @@
 version: 0.2
 phases:
   install:
-    runtime-versions:
-      python: 3.9
     commands:
-      - apt-get update
-      - apt install hugo nodejs -y
+      - mkdir -p /tmp/codebuild/bin
+      - wget https://github.com/gohugoio/hugo/releases/download/v0.121.2/hugo_0.121.2_linux-arm64.tar.gz -q -o /dev/null
+      - tar -xf hugo_0.121.2_linux-arm64.tar.gz
+      - ln -s hugo /tmp/codebuild/bin/hugo
       - npm install postcss -g
       - cd default && npm install
   build:
