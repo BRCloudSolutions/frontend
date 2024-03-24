@@ -1,15 +1,14 @@
 version: 0.2
+env:
+  variables:
+    HUGO_VERSION: 0.121.1
 phases:
   install:
     commands:
       - mkdir -p /tmp/codebuild/bin
-      - wget https://github.com/gohugoio/hugo/releases/download/v0.121.2/hugo_0.121.2_linux-arm64.tar.gz -q -o /dev/null
-      - tar -xf hugo_0.121.2_linux-arm64.tar.gz
-      - ./hugo version
+      - wget https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_$HUGO_VERSION_linux-arm64.tar.gz -q -o /dev/null
+      - tar -xf hugo_$HUGO_VERSION_linux-arm64.tar.gz
       - cp hugo /tmp/codebuild/bin/hugo
-      - ls -ltah /tmp/codebuild/bin
-      - hugo version
-      - echo $PATH
       - npm install postcss -g
       - npm install
   build:
