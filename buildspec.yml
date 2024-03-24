@@ -1,4 +1,7 @@
 version: 0.2
+env:
+  variables:
+    HUGO_VERSION: 0.121.1
 phases:
   install:
     commands:
