@@ -3,7 +3,7 @@ title: BR Cloud Solutions
 description: Find out what we can do for your business
 ---
 
-{{% blocks/cover title="Architecting the Cloud Pathway for Business Evolution" image_anchor="top" height="full" %}}
+{{% blocks/cover title="Architecting the Cloud Pathway for Business Evolution" image_anchor="top" height="auto" %}}
 {{% param description %}}
 {.display-6}
 {.p-initial .my-5}

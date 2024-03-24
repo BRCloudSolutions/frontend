@@ -8,7 +8,23 @@ contentDir = "content/en"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
-[languages]
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsUseClassic = false
+pygmentsStyle = "tango"
+
+[markup.goldmark.renderer]
+unsafe= true
+[markup.goldmark.parser.attribute]
+block = true
+[markup.highlight]
+style = "tango"
+
+
+[outputs]
+home = ["HTML"]
+page = ["HTML"]
+section = ["HTML", "RSS", "print"]
 
 [languages.en]
 contentDir = 'content/en'
