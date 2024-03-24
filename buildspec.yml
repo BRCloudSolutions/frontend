@@ -6,10 +6,13 @@ phases:
       - wget https://github.com/gohugoio/hugo/releases/download/v0.121.2/hugo_0.121.2_linux-arm64.tar.gz -q -o /dev/null
       - tar -xf hugo_0.121.2_linux-arm64.tar.gz
       - ln -s hugo /tmp/codebuild/bin/hugo
+      - ls -ltha /tmp/codebuild/bin
+      - echo $PATH
       - npm install postcss -g
       - npm install
   build:
     commands:
+      - ls -ltha /tmp/codebuild/bin
       - cd default
       - hugo
       - aws s3 sync public/ s3://brcloudsolutions.com/ --delete
