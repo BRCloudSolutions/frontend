@@ -7,7 +7,7 @@ phases:
       - tar -xf hugo_0.121.2_linux-arm64.tar.gz
       - ln -s hugo /tmp/codebuild/bin/hugo
       - npm install postcss -g
-      - cd default && npm install
+      - npm install
   build:
     commands:
       - cd default
