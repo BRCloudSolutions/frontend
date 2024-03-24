@@ -13,8 +13,10 @@ phases:
       - ln -s npm /tmp/codebuild/bin/npm
       - ln -s npx /tmp/codebuild/bin/npx
       - npm install postcss -g
-      - cd docsy && npm install
+      - cd default && npm install
   build:
     commands:
-      - cd docsy
+      - cd default
       - hugo
+      - aws s3 sync public/ s3://brcloudsolutions.com/ --delete
+      - aws s3 sync public/ s3://brcloudsolutions.com.br/ --delete
