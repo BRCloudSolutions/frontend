@@ -4,7 +4,7 @@ linkTitle: Sobre nós
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="Sobre Nós"  image_anchor="bottom" height="min" %}}
+{{% blocks/cover image_anchor="bottom" height="min" %}}
 
 A BR Cloud Solutions se destaca na entrega de serviços abrangentes de consultoria em nuvem, com ênfase no desenvolvimento em nuvem, configuração de infraestrutura e integração DevOps.
 
