@@ -1,6 +1,6 @@
 ---
 title: BR Cloud Solutions
-description: Descubra o que podemos fazer pelo seu negócio
+description: Descubra o que podemos fazer por sua empresa
 ---
 
 {{% blocks/cover title="Soluções em nuvem para a evolução do seu negócio" image_anchor="top" height="auto" %}}
