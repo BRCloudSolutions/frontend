@@ -4,7 +4,7 @@ linkTitle: About
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="About Us"  image_anchor="bottom" height="min" %}}
+{{% blocks/cover image_anchor="bottom" height="min" %}}
 
 BR Cloud Solutions excels in delivering comprehensive cloud consultancy services, with an emphasis on cloud development, infrastructure configuration, and DevOps integration.
 
