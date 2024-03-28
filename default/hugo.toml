@@ -67,3 +67,8 @@ name = "LinkedIn"
 url = "https://www.linkedin.com/company/br-cloud-solutions"
 icon = "fa-brands fa-linkedin"
 desc = "Follow us on LinkedIn"
+
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-DTKT7EP1EK'
